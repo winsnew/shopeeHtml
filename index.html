@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      margin-top: 72px; /* Kompensasi agar konten tidak tertutup oleh navbar */
+    }
+    .navbar-scrolled {
+      background-color: #ffffff;
+      color: #000000;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <body>
+    <header
+      class="bg-gray-800 fixed top-0 text-white py-0 px-6 left-0 right-0 transition-all duration-300"
+    >
+      <div
+        class="container mx-auto max-w-screen-xl flex items-center justify-between"
+      >
+        <nav class="flex">
+          <ul class="flex space-x-4 text-sm py-2">
+            <li><a href="#" class="hover:text-gray-400">Seller</a></li>
+            <li><a href="#" class="hover:text-gray-400">Mulai berjualan</a></li>
+            <li><a href="#" class="hover:text-gray-400">Download</a></li>
+            <li><a href="#" class="hover:text-gray-400">Ikuti Kami Di</a></li>
+          </ul>
+        </nav>
+        <nav class="flex">
+          <ul class="flex space-x-4 text-sm py-2">
+            <li><a href="#" class="hover:text-gray-400">Beranda</a></li>
+            <li><a href="#" class="hover:text-gray-400">Produk</a></li>
+            <li><a href="#" class="hover:text-gray-400">Keranjang</a></li>
+            <li><a href="#" class="hover:text-gray-400">Akun</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container mx-auto max-w-screen-lg items-center ">
+        <div class="flex justify-evenly my-3">
+          <div class="flex items-center">
+            <h1>SHOPEE</h1>
+          </div>
+          <div class="flex grid grid-row ">
+            <input
+              type="text"
+              placeholder="Cari produk..."
+              class="border border-gray-300 rounded-lg py-2 my-1 px-20 mx-2 "
+            />
+            <div class="ml-2 my-auto py-0 flex items-center space-x-2">
+              <a href="#" class="text-blue-500 text-xs hover:underline">One Set Wanita</a>
+              <a href="#" class="text-blue-500 text-xs hover:underline">Baju Atasan Wanita</a>
+              <a href="#" class="text-blue-500 text-xs hover:underline">Barang Lucu</a>
+              <a href="#" class="text-blue-500 text-xs hover:underline">Cardigan</a>
+              <a href="#" class="text-blue-500 text-xs hover:underline">Tas Sekolah</a>
+              <a href="#" class="text-blue-500 text-xs hover:underline">Iphone 14 Pro Max</a>
+              <a href="#" class="text-blue-500 text-xs hover:underline">Setelan Wanita Kekinian</a>
+              <a href="#" class="text-blue-500 text-xs hover:underline">Tas</a>
+              
+            </div>
+          </div>
+          <button class="bg-blue-500 text-white py-2 px-6 rounded-lg flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            
+          </button>
+          
+        </div>
+      </div>
+
+      
+    </header>
+
+    <section class="py-20 pb-6">
+      <div class="container mx-auto max-w-screen-xl">
+          <div class="grid grid-rows-4 grid-flow-col gap-4">
+            <div class="row-span-4 col-span-2 bg-blue-500 h-60 w-70">
+              01
+            </div>
+            <div class="col-span-1 row-span-2 bg-gray-100 ">02</div>
+            <div class="row-span-2 col-span-1 bg-gray-200 ">03</div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <div class="container mx-auto max-w-screen-xl pb-0 py-5">
+        <div class="flex justify-center space-x-8">
+          <div class="grid grid-cols-10 gap-14">
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <button class="bg-blue-500 text-white py-6 px-6 rounded-lg flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 6a2 2 0 012-2h8a2 2 0 012 2v2h2a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V9a1 1 0 011-1h2V6zm6-4a3 3 0 00-3 3v1h6V5a3 3 0 00-3-3zm-3 5H5v8h2V7zm6 0h2v8h-2V7zM6 7h2v8H6V7z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 bg-gray-200">
+      <div class="bg-gray-200">
+        <div class="container max-w-screen-xl mx-auto py-0 bg-white">
+          <h1 class="text-3xl p-4 font-bold mb-2">Kategori</h1>
+          <div class="grid gap-2 px-2">
+            <ul
+              id="productList"
+              class="grid grid-cols-10 grid-rows-2 gap-2"
+            ></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-2 bg-gray-200">
+      <div class="container max-w-screen-xl mx-auto bg-white">
+        <div class="flex items-center py-4">
+          <h1 class="text-3xl p-4 font-bold">Flash Sale</h1>
+          <div class="flex flex-grow justify-between">
+            <div id="countdown" class="flex text-lg font-bold">
+              
+              <div class="bg-black text-white px-2 py-1 mr-1">0h</div>
+              <div class="bg-black text-white px-2 py-1 mr-1">0m</div>
+              <div class="bg-black text-white px-2 py-1">0s</div>
+            </div>
+            <div class="flex mx-6">
+              <a href="#" class="">Lihat Semua</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-6 gap-4">
+          <div class="p-4">
+            <img
+              src="product1.png"
+              alt="Product 1"
+              class="max-w-full max-h-full"
+            />
+            <p class="text-xl font-bold mt-2">$50</p>
+          </div>
+          <div class="p-4">
+            <img
+              src="product2.png"
+              alt="Product 2"
+              class="max-w-full max-h-full"
+            />
+            <p class="text-xl font-bold mt-2">$40</p>
+          </div>
+          <div class="p-4">
+            <img
+              src="product3.png"
+              alt="Product 3"
+              class="max-w-full max-h-full"
+            />
+            <p class="text-xl font-bold mt-2">$60</p>
+          </div>
+          <div class="p-4">
+            <img
+              src="product4.png"
+              alt="Product 4"
+              class="max-w-full max-h-full"
+            />
+            <p class="text-xl font-bold mt-2">$55</p>
+          </div>
+          <div class="p-4">
+            <img
+              src="product5.png"
+              alt="Product 5"
+              class="max-w-full max-h-full"
+            />
+            <p class="text-xl font-bold mt-2">$45</p>
+          </div>
+          <div class="p-4">
+            <img
+              src="product6.png"
+              alt="Product 6"
+              class="max-w-full max-h-full"
+            />
+            <p class="text-xl font-bold mt-2">$35</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 bg-gray-200">
+      <div class="container max-w-screen-xl mx-auto bg-white">
+        <div class="gap-2">
+          <div class="flex justify-center p-4 mx-auto">
+            <img
+              src="https://cf.shopee.co.id/file/sg-50009109-616acf4d00fc3611367454a70d33a286"
+              class="max-w-full max-h-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 bg-gray-200">
+      <div class="container mx-auto px-4 max-w-screen-xl bg-white">
+        <div class="flex items-center py-4">
+          <h1 class="text-3xl font-bold">Shopee Mall</h1>
+          <div class="flex flex-grow justify-between">
+            <div class="flex">
+              <ul class="flex row space-x-2">
+                <li>7 Hari Pengembalian</li>
+                <li>100% ori</li>
+                <li>Gratis</li>
+              </ul>
+            </div>
+            <div class="flex mx-6">
+              <a href="#" class="">Lihat Semua</a>
+            </div>
+          </div>
+          
+          </div>
+          <div class="flex">
+            <div class="flex grid grid-cols-1">
+              <div class="bg-blue-200 w-80 h-96">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="flex grid grid-flow-col">
+              <div class="bg-blue-300 w-40 h-40">
+                <p>hello</p>
+              </div>
+              <div class="bg-blue-100 h-40 w-40 ">
+                <p>hello</p>
+              </div>
+              <div class="bg-blue-800 h-40 w-40 ">
+                <p>hello</p>
+              </div>
+              <div class="bg-blue-600 h-40 w-40 ">
+                <p>hello</p>
+              </div>
+            </div>
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 bg-gray-200">
+      <div class="container mx-auto max-w-screen-xl bg-white">
+        <div class="flex justify-center py-5 transition-all duration-300">
+          <h1 class="text-2xl top-0 bg-white">Rekomendasi</h1>
+        </div>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-1.jpg"
+                alt="Product 1"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 1</h3>
+              <p class="text-gray-500">Description of Product 1</p>
+              <span class="text-green-500 font-semibold mt-2">$29.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-2.jpg"
+                alt="Product 2"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 2</h3>
+              <p class="text-gray-500">Description of Product 2</p>
+              <span class="text-green-500 font-semibold mt-2">$39.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-3.jpg"
+                alt="Product 3"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 3</h3>
+              <p class="text-gray-500">Description of Product 3</p>
+              <span class="text-green-500 font-semibold mt-2">$49.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-4.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 4</h3>
+              <p class="text-gray-500">Description of Product 4</p>
+              <span class="text-green-500 font-semibold mt-2">$59.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-5.jpg"
+                alt="Product 5"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 5</h3>
+              <p class="text-gray-500">Description of Product 5</p>
+              <span class="text-green-500 font-semibold mt-2">$69.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-6.jpg"
+                alt="Product 6"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 6</h3>
+              <p class="text-gray-500">Description of Product 6</p>
+              <span class="text-green-500 font-semibold mt-2">$79.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-1.jpg"
+                alt="Product 1"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 1</h3>
+              <p class="text-gray-500">Description of Product 1</p>
+              <span class="text-green-500 font-semibold mt-2">$29.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-2.jpg"
+                alt="Product 2"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 2</h3>
+              <p class="text-gray-500">Description of Product 2</p>
+              <span class="text-green-500 font-semibold mt-2">$39.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-3.jpg"
+                alt="Product 3"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 3</h3>
+              <p class="text-gray-500">Description of Product 3</p>
+              <span class="text-green-500 font-semibold mt-2">$49.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-4.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 4</h3>
+              <p class="text-gray-500">Description of Product 4</p>
+              <span class="text-green-500 font-semibold mt-2">$59.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-5.jpg"
+                alt="Product 5"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 5</h3>
+              <p class="text-gray-500">Description of Product 5</p>
+              <span class="text-green-500 font-semibold mt-2">$69.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-6.jpg"
+                alt="Product 6"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 6</h3>
+              <p class="text-gray-500">Description of Product 6</p>
+              <span class="text-green-500 font-semibold mt-2">$79.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-1.jpg"
+                alt="Product 1"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 1</h3>
+              <p class="text-gray-500">Description of Product 1</p>
+              <span class="text-green-500 font-semibold mt-2">$29.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-2.jpg"
+                alt="Product 2"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 2</h3>
+              <p class="text-gray-500">Description of Product 2</p>
+              <span class="text-green-500 font-semibold mt-2">$39.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-3.jpg"
+                alt="Product 3"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 3</h3>
+              <p class="text-gray-500">Description of Product 3</p>
+              <span class="text-green-500 font-semibold mt-2">$49.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-4.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 4</h3>
+              <p class="text-gray-500">Description of Product 4</p>
+              <span class="text-green-500 font-semibold mt-2">$59.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-5.jpg"
+                alt="Product 5"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 5</h3>
+              <p class="text-gray-500">Description of Product 5</p>
+              <span class="text-green-500 font-semibold mt-2">$69.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-6.jpg"
+                alt="Product 6"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 6</h3>
+              <p class="text-gray-500">Description of Product 6</p>
+              <span class="text-green-500 font-semibold mt-2">$79.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-1.jpg"
+                alt="Product 1"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 1</h3>
+              <p class="text-gray-500">Description of Product 1</p>
+              <span class="text-green-500 font-semibold mt-2">$29.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-2.jpg"
+                alt="Product 2"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 2</h3>
+              <p class="text-gray-500">Description of Product 2</p>
+              <span class="text-green-500 font-semibold mt-2">$39.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-3.jpg"
+                alt="Product 3"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 3</h3>
+              <p class="text-gray-500">Description of Product 3</p>
+              <span class="text-green-500 font-semibold mt-2">$49.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-4.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 4</h3>
+              <p class="text-gray-500">Description of Product 4</p>
+              <span class="text-green-500 font-semibold mt-2">$59.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-5.jpg"
+                alt="Product 5"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 5</h3>
+              <p class="text-gray-500">Description of Product 5</p>
+              <span class="text-green-500 font-semibold mt-2">$69.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-6.jpg"
+                alt="Product 6"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 6</h3>
+              <p class="text-gray-500">Description of Product 6</p>
+              <span class="text-green-500 font-semibold mt-2">$79.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-1.jpg"
+                alt="Product 1"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 1</h3>
+              <p class="text-gray-500">Description of Product 1</p>
+              <span class="text-green-500 font-semibold mt-2">$29.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-2.jpg"
+                alt="Product 2"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 2</h3>
+              <p class="text-gray-500">Description of Product 2</p>
+              <span class="text-green-500 font-semibold mt-2">$39.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-3.jpg"
+                alt="Product 3"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 3</h3>
+              <p class="text-gray-500">Description of Product 3</p>
+              <span class="text-green-500 font-semibold mt-2">$49.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-4.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 4</h3>
+              <p class="text-gray-500">Description of Product 4</p>
+              <span class="text-green-500 font-semibold mt-2">$59.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-5.jpg"
+                alt="Product 5"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 5</h3>
+              <p class="text-gray-500">Description of Product 5</p>
+              <span class="text-green-500 font-semibold mt-2">$69.99</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <img
+                src="product-image-6.jpg"
+                alt="Product 6"
+                class="w-full h-48 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-lg font-semibold">Product 6</h3>
+              <p class="text-gray-500">Description of Product 6</p>
+              <span class="text-green-500 font-semibold mt-2">$79.99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex py-8 justify-center">
+        <div class="flex">
+          <button class="bg-gray-100">Lihat Lainnya</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto">
+      <div class="">
+        <p>Hello Selamat Datang di web</p>
+        <footer class="bg-gray-800 text-white py-4 px-6">
+          <div class="container mx-auto text-center">
+            &copy; 2023 Shoppeeee.
+          </div>
+        </footer>
+      </div>
+    </section>
+    
+
+    <script>
+     
+
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("navbar-scrolled", window.scrollY > 0);
+      });
+
+      window.addEventListener("scroll", function () {
+        var recomm = document.querySelector("recommend");
+        recomm.classList.toggle("recom-scroll", window.scrollY > 0);
+      });
+
+      function carousel() {
+        return {
+          currentSlide: 0,
+          slideWidth: 0,
+
+          initCarousel() {
+            this.slideWidth = this.$refs.container.offsetWidth;
+          },
+
+          prevSlide() {
+            this.currentSlide = Math.max(this.currentSlide - 1, 0);
+          },
+
+          nextSlide() {
+            const maxSlides = this.$refs.container.children.length - 1;
+            this.currentSlide = Math.min(this.currentSlide + 1, maxSlides);
+          },
+        };
+      }
+
+      // Mengambil data dari URL
+      fetch("https://dummyjson.com/products")
+        .then((response) => response.json()) // Mengubah respons menjadi JSON
+        .then((data) => {
+          // Memproses data yang diterima
+          const productList = document.getElementById("productList");
+          data.products.slice(0, 20).forEach((product) => {
+            // Membuat elemen <li> untuk setiap produk
+            const li = document.createElement("li");
+            li.classList.add("bg-white", "p-4", "rounded", "shadow");
+
+            // Menampilkan gambar produk
+            const thumbnail = document.createElement("img");
+            thumbnail.classList.add("w-full", "h-auto", "mb-2");
+            thumbnail.src = product.thumbnail;
+            li.appendChild(thumbnail);
+
+            // Menambahkan elemen <li> ke dalam <ul>
+            productList.appendChild(li);
+          });
+        })
+        .catch((error) => console.error(error));
+    </script>
+  </body>
+</html>
